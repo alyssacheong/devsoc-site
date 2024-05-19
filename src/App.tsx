@@ -4,10 +4,10 @@ import bubbles from "./bubbles.png";
 import bubbles2 from "./bubbles2.png";
 import bubbles3 from "./bubbles3.png";
 import bubbles4 from "./bubbles4.png";
-import clouds from "./clouds.png";
+// import clouds from "./clouds.png";
 import cloud2 from "./cloud2.png";
 import cloud3 from "./cloud3.png"
-import logo from "./logo.png";
+//import logo from "./logo.png";
 
 function App() {
   const [text, setText] = useState(<span>click bubbles</span>);
