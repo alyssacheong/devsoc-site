@@ -1,68 +1,62 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Iverse mono";
+  src: url(IverseMono-Regular.ttf);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: 'Eastman Roman Regular Offset';
+  src: url(EastmanRomanTrial-RegularOffset.otf);
 }
-a:hover {
-  color: #535bf2;
+
+@font-face {
+  font-family: 'Eastman Roman Medium' ;
+  src: url(EastmanRomanTrial-Medium.otf);
 }
+
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-color: #44c0fe;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.initial-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Iverse mono";
+  color: white;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.about-me-title {
+  color: white;
+  font-family: 'Eastman Roman Medium';
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* BUBBLES */
+.about-me-bubble {
+  top: -7rem;
+  left: 10rem;
+  position: absolute;
+}
+
+.hobbies-bubble {
+  position: absolute;
+  top: -7rem;
+  left: 30rem;
+}
+
+.code-bubble {
+  position: absolute;
+  top: 45rem;
+  left: 35rem;
+}
+
+
+.bubble {
+  background: transparent;
+  border: 0;
+}
+
+.bubble-image {
+  background: transparent;
 }
