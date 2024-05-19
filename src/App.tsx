@@ -84,9 +84,23 @@ function App() {
               </span>
             )
           }}
-        
-        
-        
+        ><img src={bubbles3} className="bubble-image"></img></button>
+      </div>
+
+      <div className="code-bubble">
+        <button
+          className="bubble"
+          onClick={() => {
+            setText(
+              <span>
+                <div className="code-container">
+                <h1 className="about-me-title">Some Irrelevant Projects</h1>
+                <p>I made this pizza game in p5js.</p>
+                <p>Also this chicken</p>
+                </div>
+              </span>
+            )
+          }}
         ><img src={bubbles3} className="bubble-image"></img></button>
       </div>
 
