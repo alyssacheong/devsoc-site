@@ -14,8 +14,12 @@
 }
 
 
-body {
+html, body {
   background-color: #44c0fe;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .initial-text {
@@ -34,29 +38,51 @@ body {
 
 /* BUBBLES */
 .about-me-bubble {
-  top: -7rem;
+  top: 5rem;
   left: 10rem;
   position: absolute;
 }
 
 .hobbies-bubble {
   position: absolute;
-  top: -7rem;
-  left: 30rem;
+  top: 3rem;
+  left: 50rem;
 }
 
 .code-bubble {
   position: absolute;
-  top: 45rem;
-  left: 35rem;
+  top: 35rem;
+  left: 60rem;
+}
+
+.socials-bubble {
+  position: absolute;
+  top: 38rem;
+  left: 22rem;
 }
 
 
 .bubble {
   background: transparent;
   border: 0;
+  cursor: pointer;
 }
 
 .bubble-image {
   background: transparent;
+}
+
+/* CLOUDS */ 
+.cloud {
+  position: absolute;
+  bottom: -7rem;
+  left: -11rem;
+
+}
+
+.cloud1 {
+  position: absolute;
+  width: 15%;
+  top: 15rem;
+  right: 2rem;
 }

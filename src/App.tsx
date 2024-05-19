@@ -6,6 +6,8 @@ import bubbles3 from "./bubbles3.png";
 import bubbles4 from "./bubbles4.png";
 import clouds from "./clouds.png";
 import cloud2 from "./cloud2.png";
+import cloud3 from "./cloud3.png"
+import logo from "./logo.png";
 
 function App() {
   const [text, setText] = useState(<span>click bubbles</span>);
@@ -103,9 +105,25 @@ function App() {
           }}
         ><img src={bubbles3} className="bubble-image"></img></button>
       </div>
+      
+      <div className="socials-bubble">
+        <button
+          className="bubble"
+          onClick={() => {
+            setText(
+              <span>
+                <div className="socials-container">
+                <h1 className="about-me-title">Socials</h1>
+                
+                </div>
+              </span>
+            )
+          }}
+        ><img src={bubbles4} className="bubble-image"></img></button>
+      </div>
 
-
-
+      <img src={cloud2} className="cloud"></img>
+      <img src={cloud3} className="cloud1"></img>
     </div>
   );
 }
