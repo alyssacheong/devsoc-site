@@ -38,7 +38,7 @@ html, body {
 
 /* BUBBLES */
 .about-me-bubble {
-  top: 5rem;
+  top: 2rem;
   left: 10rem;
   position: absolute;
 }
@@ -56,8 +56,8 @@ html, body {
 }
 .socials-bubble {
   position: absolute;
-  top: 38rem;
-  left: 22rem;
+  top: 19rem;
+  left: 2rem;
 }
 
 
