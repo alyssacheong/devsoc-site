@@ -1,13 +1,34 @@
 import { useState } from "react";
+//import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+
+
 import "./App.css";
 import bubbles from "./bubbles.png";
 import bubbles2 from "./bubbles2.png";
 import bubbles3 from "./bubbles3.png";
 import bubbles4 from "./bubbles4.png";
+
 // import clouds from "./clouds.png";
 import cloud2 from "./cloud2.png";
-import cloud3 from "./cloud3.png"
+import cloud3 from "./cloud3.png";
 //import logo from "./logo.png";
+
+const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: 'rgba(0, 0, 0, 0.87)',
+    boxShadow: theme.shadows[1],
+    fontSize: 11,
+  },
+}));
+
+
+
 
 function App() {
   const [text, setText] = useState(<span>click bubbles</span>);
@@ -27,7 +48,18 @@ function App() {
                     I've been a casual maimai player for about a year now (I
                     still suck though).
                   </p>
-                  <a className="maimai-image" href="https://postimg.cc/XpYxs5t9" target="_blank"><img src="https://i.postimg.cc/XpYxs5t9/718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7.jpg" alt="718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7"/></a><br/><br/>
+                  <a
+                    className="maimai-image"
+                    href="https://postimg.cc/XpYxs5t9"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.postimg.cc/XpYxs5t9/718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7.jpg"
+                      alt="718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7"
+                    />
+                  </a>
+                  <br />
+                  <br />
 
                   <p className="hobbies-text">
                     I also cycle through mobile/idle games because it keeps me
@@ -36,18 +68,48 @@ function App() {
                     Pizza. Currently I am on level 1305 of wordscapes (i'll
                     probably get bored soon)
                   </p>
-                  <a className="wordscapes-image" href="https://postimg.cc/B8HCjB1f" target="_blank"><img src="https://i.postimg.cc/B8HCjB1f/IMG-4776.png" alt="IMG-4776"/></a><br/><br/>
+                  <a
+                    className="wordscapes-image"
+                    href="https://postimg.cc/B8HCjB1f"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.postimg.cc/B8HCjB1f/IMG-4776.png"
+                      alt="IMG-4776"
+                    />
+                  </a>
+                  <br />
+                  <br />
                   <p className="hobbies-text">
                     Recently, I've picked up crocheting. I can make flowers.
                   </p>
 
-                  <a className="crochet-image" href="https://postimg.cc/dh76YYs1" target="_blank"><img src="https://i.postimg.cc/dh76YYs1/IMG-6362-1.jpg" alt="IMG-6362-1"/></a><br/><br/>
-                    
-                  <p className="hobbies-text">
-                    Also sometimes I bake things.
-                  </p>
-                  <a className="baking-image" href="https://postimg.cc/WhY8C3PC" target="_blank"><img src="https://i.postimg.cc/WhY8C3PC/IMG-6812.jpg" alt="IMG-6812"/></a><br/><br/>
-    
+                  <a
+                    className="crochet-image"
+                    href="https://postimg.cc/dh76YYs1"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.postimg.cc/dh76YYs1/IMG-6362-1.jpg"
+                      alt="IMG-6362-1"
+                    />
+                  </a>
+                  <br />
+                  <br />
+
+                  <p className="hobbies-text">Also sometimes I bake things.</p>
+                  <a
+                    className="baking-image"
+                    href="https://postimg.cc/WhY8C3PC"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.postimg.cc/WhY8C3PC/IMG-6812.jpg"
+                      alt="IMG-6812"
+                    />
+                  </a>
+                  <br />
+                  <br />
                 </div>
               </span>
             );
@@ -87,33 +149,18 @@ function App() {
             setText(
               <span>
                 <div className="code-container">
-                <h1 className="about-me-title">Some Irrelevant Projects</h1>
-                <p>I made this pizza game in p5js.</p>
-                <p>Also this chicken</p>
+                  <h1 className="about-me-title">Some Irrelevant Projects</h1>
+                  <p>I made this pizza game in p5js.</p>
+                  <p>Also this chicken</p>
                 </div>
               </span>
-            )
+            );
           }}
-        ><img src={bubbles3} className="bubble-image"></img></button>
+        >
+          <img src={bubbles3} className="bubble-image"></img>
+        </button>
       </div>
 
-      <div className="code-bubble">
-        <button
-          className="bubble"
-          onClick={() => {
-            setText(
-              <span>
-                <div className="code-container">
-                <h1 className="about-me-title">Some Irrelevant Projects</h1>
-                <p>I made this pizza game in p5js.</p>
-                <p>Also this chicken</p>
-                </div>
-              </span>
-            )
-          }}
-        ><img src={bubbles3} className="bubble-image"></img></button>
-      </div>
-      
       <div className="socials-bubble">
         <button
           className="bubble"
@@ -121,13 +168,40 @@ function App() {
             setText(
               <span>
                 <div className="socials-container">
-                <h1 className="about-me-title">Socials</h1>
-                
+                  <h1 className="about-me-title">Socials</h1>
+                  <ul className="center-list">
+                    <li data-tooltip="linkedin">
+                    
+
+                      <LightTooltip title="Add">
+                        <Button>
+                        <a
+                        href="https://www.linkedin.com/in/alyssa-cheong-051405225/"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-linkedin"></i>
+                      </a>
+
+                        </Button>
+                      </LightTooltip>
+
+                    </li>
+                    <li data-tooltip="github">
+                      <a href="https://github.com/Toasterf1sh" target="_blank">
+                        <i className="fa-brands fa-github"></i>
+                      </a>
+                      
+                    
+                      
+                    </li>
+                  </ul>
                 </div>
               </span>
-            )
+            );
           }}
-        ><img src={bubbles4} className="bubble-image"></img></button>
+        >
+          <img src={bubbles4} className="bubble-image"></img>
+        </button>
       </div>
 
       <img src={cloud2} className="cloud"></img>
