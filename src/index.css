@@ -54,7 +54,6 @@ html, body {
   top: 35rem;
   left: 60rem;
 }
-
 .socials-bubble {
   position: absolute;
   top: 38rem;
@@ -86,3 +85,28 @@ html, body {
   top: 15rem;
   right: 2rem;
 }
+
+/* IMAGES */
+.maimai-image {
+  position: absolute;
+  top: 6rem;
+  left: 50rem;
+}
+
+.wordscapes-image {
+  position: absolute;
+  top: 25rem;
+  left: -8rem;
+}
+
+
+/* TEXT */
+.hobbies-container {
+  width: 100%;
+  text-align: center;
+  /* max-width: 30rem; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+
+

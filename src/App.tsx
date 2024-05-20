@@ -23,23 +23,31 @@ function App() {
               <span>
                 <div className="hobbies-container">
                   <h1 className="about-me-title">My hobbies</h1>
-                  <p>
+                  <p className="hobbies-text">
                     I've been a casual maimai player for about a year now (I
                     still suck though).
                   </p>
-                  <p>
+                  <a className="maimai-image" href="https://postimg.cc/XpYxs5t9" target="_blank"><img src="https://i.postimg.cc/XpYxs5t9/718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7.jpg" alt="718-C2-CCD-31-A4-404-C-BD73-988-E358506-C7"/></a><br/><br/>
+
+                  <p className="hobbies-text">
                     I also cycle through mobile/idle games because it keeps me
                     distracted on the long trek to UNSW. Notable games include:
                     Candy Crush, HookedInc, Camping Tycoon, Good Pizza Great
-                    Pizza. Currently I am on level __ of wordscapes (i'll
+                    Pizza. Currently I am on level 1305 of wordscapes (i'll
                     probably get bored soon)
                   </p>
-                  <p>
+                  <a className="wordscapes-image" href="https://postimg.cc/B8HCjB1f" target="_blank"><img src="https://i.postimg.cc/B8HCjB1f/IMG-4776.png" alt="IMG-4776"/></a><br/><br/>
+                  <p className="hobbies-text">
                     Recently, I've picked up crocheting. I can make flowers.
                   </p>
-                  <p>
+
+                  <a className="crochet-image" href="https://postimg.cc/dh76YYs1" target="_blank"><img src="https://i.postimg.cc/dh76YYs1/IMG-6362-1.jpg" alt="IMG-6362-1"/></a><br/><br/>
+                    
+                  <p className="hobbies-text">
                     Also sometimes I bake things.
                   </p>
+                  <a className="baking-image" href="https://postimg.cc/WhY8C3PC" target="_blank"><img src="https://i.postimg.cc/WhY8C3PC/IMG-6812.jpg" alt="IMG-6812"/></a><br/><br/>
+    
                 </div>
               </span>
             );
