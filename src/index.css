@@ -34,6 +34,7 @@ html, body {
 .about-me-title {
   color: white;
   font-family: 'Eastman Roman Medium';
+  margin: 0;
 }
 
 /* BUBBLES */
@@ -46,7 +47,7 @@ html, body {
 .hobbies-bubble {
   position: absolute;
   top: 3rem;
-  left: 50rem;
+  left: 60rem;
 }
 
 .code-bubble {
@@ -60,6 +61,13 @@ html, body {
   left: 2rem;
 }
 
+.fake-bubble {
+  position: absolute;
+  bottom: 3rem;
+  left: 24rem;
+  cursor: pointerl
+}
+
 .bubble {
   background: transparent;
   border: 0;
@@ -70,31 +78,80 @@ html, body {
   background: transparent;
 }
 
-/* CLOUDS */ 
-.cloud {
-  position: absolute;
-  bottom: -7rem;
-  left: -11rem;
-}
-
-.cloud1 {
-  position: absolute;
-  width: 15%;
-  top: 15rem;
-  right: 2rem;
-}
 
 /* IMAGES */
 .maimai-image {
   position: absolute;
-  top: 6rem;
-  left: 50rem;
+  top: -14rem;
+  left: 23rem;
 }
 
 .wordscapes-image {
   position: absolute;
-  top: 25rem;
-  left: -8rem;
+  top: 4rem;
+  left: -13rem;
+  z-index: 999;
+}
+
+.crochet-image {
+  position: absolute;
+  top: 7rem;
+  right: -15rem;
+}
+
+.baking-image {
+  position: absolute;
+  top: 19rem;
+  left: 23rem;
+}
+
+.random-text {
+  position: absolute;
+  left: -13rem;
+  top: 15rem;
+  font-size: 0.8rem;
+}
+
+.arrow1 {
+  position: absolute;
+  width: 10%;
+  top: 10rem;
+  left: 15rem;
+}
+
+.arrow2 {
+  position: absolute;
+  width: 7%;
+  top: -1rem;
+  right: 10rem;
+}
+
+.arrow3 {
+  position: absolute;
+  width: 9%;
+  right: -2rem;
+  top: 12rem;
+}
+
+.arrow4 {
+  position: absolute;
+  width: 3%;
+  top: 11rem;
+  left: -1rem;
+}
+
+.arrow5 {
+  position: absolute;
+  width: 5%;
+  top: 16rem;
+  left: 27rem;
+}
+
+.me {
+  position: absolute;
+  width: 25%;
+  top: 12rem;
+  left: 23rem;
 }
 
 
@@ -104,6 +161,12 @@ html, body {
   text-align: center;
   /* max-width: 30rem; /* Adjust as needed */
   margin: 0 auto;
+}
+
+
+
+.links-text {
+  line-height: 0.5rem;
 }
 
 
@@ -124,7 +187,7 @@ html, body {
   list-style-type: none;
   padding: 0;
   display: flex;
-  gap: 2rem; /* Adjust the gap between the items as needed */
+  gap: 1rem; /* Adjust the gap between the items as needed */
 }
 
 .center-list li {
@@ -136,3 +199,61 @@ html, body {
   text-decoration: none;
 }
 
+.pizza {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+}
+
+.pizza-text {
+  position: relative;
+  width: 25rem;
+  top: -14rem;
+  right: -25rem;
+}
+
+.pizza-text ul {
+  list-style: none;
+  text-align: left;
+}
+
+.pizza-text2 ul {
+  width: 20rem;
+  list-style: none;
+}
+
+
+/* CLOUDS */ 
+.cloud {
+  position: absolute;
+  bottom: -7rem;
+  left: -11rem;
+  z-index: 0;
+}
+
+.cloud1 {
+  position: absolute;
+  width: 15%;
+  top: 10rem;
+  right: 4rem;
+  z-index: 0;
+}
+
+.clouds {
+  position: relative;
+  top: 25rem;
+  width: 35%;
+  right: -55rem;
+}
+
+.cloud4 {
+  position: relative;
+  top: -14.5rem;
+  right: -25rem;
+}
+
+.cloud5 {
+  position: relative;
+  top: -45rem;
+  left: -47rem;
+}
